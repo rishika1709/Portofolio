@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', sans-serif;
+            background-color: white;
+            color: teal;
+            text-align: center;
+        }
+        /*this is to get the back ground image and in this we can also make the image so be in center and we can also make the image to cover the whole background*/
+        body {
+            background: pink;
+            background-image: url('https://marketplace.canva.com/EAFcMtb-Lgw/1/0/900w/canva-pink-aesthetic-watercolor-phone-wallpaper-vXwKpolZfY8.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        /*this is for the main heading*/
+        header {
+            background-color: coral;
+            color: black;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        /* this is for the header number 2 */
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: brown;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: pink;
+        }
+        /*It is for the boxes/conatiner which we had storge the text.*/
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #ffffffb0;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+            width: 60%;
+            position: relative;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        .section h2::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: #3498db;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /*it is used in the in the header section*/
+        .home,
+        .about-me,
+        .portfolio,
+        .contact-section{
+            margin: 20px auto;
+            text-align: center;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        /* Square Image Container for the profile pic*/
+        .image-container {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            clear: both;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY PORTFOLIO</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <!-- Image Container -->
+        <div id="home" class="image-container">
+            <img src="https://i.pinimg.com/736x/35/bb/05/35bb059cb315a9ab399f5de92041fb7d.jpg" alt="Profile Image">
+        </div>
+        <!-- About Me Section -->
+        <section id="about" class="section intro">
+            <h2>Home</h2>
+            <p>Hello, I am Rishika, a passionate student with a keen interest in computers and technology. I thrive on challenges and constantly set goals for myself to improve and stay on top of the latest industry trends. These challenges help me to improve myself gradually and keep me focused on developing the required skills for the industry.</p>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-list">
+            <h2>About Me</h2>
+            <p>Myself Rishika from Narasaraopet. I am currently pursuing B.Tech at Vignan University, located in Vadlamudi, Guntur, Andhra Pradesh. My dad was a civil engineer who worked in Dubai but now has retired and is working as a businessman. My mom is a housewife, and I have a brother who is currently studying intermediate. We are currently residing in Guntur.</p>
+        </section>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section projects-list">
+            <h2>Portfolio</h2>
+            <div class="skill-item">
+                <h3>Soft Skill</h3>
+                <p>I am an easy-going and friendly person. I am very patient and can communicate with anyone. I can speak and understand up to four languages: English, Hindi, French, and Telugu.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Computer Skill</h3>
+                <p>I have a partial understanding of computer languages including C, Python, Java, HTML, and CSS.</p>
+            </div>
+            <div class="project-item" class="section project-item">
+                <h3>My First Project</h3>
+                <img src="Portofiles.png" height="30%" width="30%">
+                <p>The above project was done by me. In this project, we used HTML along with CSS and JavaScript. I completed this project in the 3rd year as my class project.</p>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <p>I will be very glad if you can contact me. I might be busy, but I will respond as fast as I can. The following information contains ways to reach me. THANK YOU.</p>
+            <p>Email: <a href="mailto:trisihiika@gmail.com">trisihiika@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918897582996">8897582996</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/t-rishika-642041296" target="_blank">www.linkedin.com/in/t-rishika-642041296</a></p>
+            <form class="contact-form" action="your-email-handler.php" method="post">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
